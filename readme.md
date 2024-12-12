@@ -3,6 +3,7 @@ clone project:
 `git clone https://github.com/dimabaril/email-sender.git`
 
 go in:
+
 `cd email-sender`
 
 fill in .env according example.env:
@@ -20,15 +21,19 @@ ALLOWED_HOSTS=http://127.0.0.1:5500,localhost,example.com
 ```
 
 make venv (python required):
+
 `python -m venv venv`
 
 go in:
+
 `source venv/bin/activate`
 
 instal requirements:
+
 `pip install -r requirements.txt`
 
 run app:
+
 `uvicorn app:app --reload`
 
 open index.html in liveserver (if we change request side we need to modify or add origins)
