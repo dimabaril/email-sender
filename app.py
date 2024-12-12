@@ -13,7 +13,7 @@ app = FastAPI()
 
 
 origins = [
-    "http://127.0.0.1:5500",
+    "http://127.0.0.1:5500",  # from where the request will be made
 ]
 
 app.add_middleware(
@@ -41,7 +41,7 @@ if SENDGRID_API_KEY is None:
 async def send_email(data: EmailMessage):
     message = Mail(
         from_email="dimabaril@gmail.com",  # should be verified in SendGrid
-        to_emails="dimabaril@yandex.ru",
+        to_emails="dimabaril@yandex.ru",  # where the email will be sent, google does not work don't know why
         subject="Some subject",
         plain_text_content=f"От {data.name} ({data.email}):\n\n{data.message}",
     )
