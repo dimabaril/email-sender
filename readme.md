@@ -3,10 +3,11 @@ clone project:
 `git clone https://github.com/dimabaril/email-sender.git`
 
 fill in .env according example.env:
-go to the https://app.sendgrid.com/guide/integrate/langs/python and create SENDGRID_API_KEY dont forget
-verification
-FROM_EMAIL should be verified in SendGrid
-TO_EMAIL where the email will be sent, google does not work don't know why
+
+- go to the https://app.sendgrid.com/guide/integrate/langs/python and create SENDGRID_API_KEY dont forget
+  verification
+- FROM_EMAIL should be verified in SendGrid
+- TO_EMAIL where the email will be sent, google does not work don't know why
 
 ```
 SENDGRID_API_KEY=your_api_key_from_sendgrid
