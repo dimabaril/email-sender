@@ -2,6 +2,9 @@ clone project:
 
 `git clone https://github.com/dimabaril/email-sender.git`
 
+go in:
+`cd email-sender`
+
 fill in .env according example.env:
 
 - go to the https://app.sendgrid.com/guide/integrate/langs/python and create SENDGRID_API_KEY dont forget
@@ -15,9 +18,6 @@ FROM_EMAIL=some-email@gmail.com
 TO_EMAIL=some-email@yandex.ru
 ALLOWED_HOSTS=http://127.0.0.1:5500,localhost,example.com
 ```
-
-go in:
-`cd email-sender`
 
 make venv (python required):
 `python -m venv venv`
